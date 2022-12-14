@@ -1,0 +1,7 @@
+PART.1
+
+1. git branch <branch-name>
+2. recursive merge happen when commits happen on 2 branches at different times.
+3. git branch <branch-name>
+4. git branch -d <branch-name>
+5. happens when git dont know which file to choose for merging.

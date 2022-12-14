@@ -1,0 +1,81 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+
+.game-score {
+    position: relative;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 900px;
+    border: black solid;
+    background: radial-gradient(#f69d3c, #9198e5);
+}
+
+.game {
+    width: 650px;
+    height: 650px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 121.5px);
+    grid-template-rows: repeat(4, 121.5px);
+    grid-gap: 55px;
+    perspective: 800px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1.5s;
+}
+
+.flip {
+    transform: rotateY(180deg);
+}
+
+.front-face,.back-face{
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.front-face {
+    background-image: url("./images/Spider.png");
+    background-size: 65px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+
+} 
+
+.back-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    background-color: #ffbb89;
+}
+

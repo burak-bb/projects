@@ -1,0 +1,25 @@
+PART 1
+
+1. mkdir first
+2. cd first
+3. touch person.txt
+4. mv person.txt another.txt
+5. cp another.txt copy.txt
+6. rm copy.txt
+7. cp -r first second
+8. rm -rf second
+
+
+PART 2
+
+1. it describes what the commands are for, Scroll with Arrow Up and Down key,Press q to quit.
+2. ls -l: lists files with more detail and ls -a: shows files and folders + hidden ones too
+3. ctrl + < or > key
+4. ctrl + e 
+5. ctrl + a
+6. ctrl + w
+7. shell processes commands and terminalruns shell.
+8. its the path from root directory to the specific folder or filee you want to go
+9. is the relative path wgere you are currently
+10. flags modify the operation of a command, rm -rf, ls -a and ls -l
+11. rm -rf forces to removes folders with their content
