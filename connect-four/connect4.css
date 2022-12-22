@@ -17,7 +17,7 @@
 }
 
 .piece.p1 {
-  background-color: red;
+  background-color: rgb(0, 0, 0);
 }
 
 .piece.p2 {
