@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Movie Title" id="title">
+        <input type="text" placeholder="Movie Rating" id="rating">
+        <input type="submit" id="submit">
+    </form>
+    <table>
+        <th><td></td></th>
+        <tbody><td></td></tbody>
+    </table>
+    <div class="movies">
+        <div class="movie">
+            <p class="title">jcdkjndsnwwc</p>
+            <p class="rating">2</p>
+        </div>
+                <div class="movie">
+            <p class="title">jcdkjndsnwwc</p>
+            <p class="rating">2</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $("#submit").on("click", function(e){
+            e.preventDefault();
+            const title = $("#title").val();
+            const rating = $("#rating").val();
+            const movie = $("<div>").addClass("movie")
+            const movieTitle = $("<p>").addClass("title").text(title);
+            const movieRating = $("<p>").addClass("rating").text(rating);
+            const removeBtn = $("<button>").text("Remove Movie");
+            removeBtn.on("click", function(e) {
+                this.parentElement.remove()
+            })
+            movie.append(movieTitle);
+            movie.append(movieRating);
+            movie.append(removeBtn);
+            $(".movies").append(movie);
+        })
+    </script>
+</body>
+</html>
