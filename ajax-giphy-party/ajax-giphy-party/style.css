@@ -1,0 +1,66 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: rgb(33, 31, 31);
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: aliceblue;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#term {
+    width: 200px;
+}
+
+#search {
+    background-color: rgb(65, 64, 64);
+    color: aliceblue;
+}
+
+#remove {
+    background-color: rgb(255, 98, 0);
+    color: aliceblue;
+}
+
+input {
+    margin: 1px;
+    height: 40px;
+    width: 120px;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.gifs {
+    width: 1400px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3);
+}
+
+img {
+    width: 400px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
