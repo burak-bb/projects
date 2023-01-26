@@ -1,0 +1,44 @@
+.bc {
+    background-color: rgb(39, 68, 85);
+}
+
+form {
+    display: flex;
+}
+
+#search-query {
+    width: 300px;
+}
+
+.media {
+    width: 250px;
+    border: solid rgba(128, 128, 128, 0.5) 1px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.media button {
+    margin: 10px;
+    margin-left: 0px;
+}
+
+small {
+    display: -webkit-box;
+    overflow-y: scroll;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+}
+
+::-webkit-scrollbar{
+    background-color: rgb(88, 114, 124);
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+img {
+    width: 230px;    
+    margin-bottom: 10px;
+}
