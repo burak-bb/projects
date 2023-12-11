@@ -1,0 +1,75 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+body {
+    background-color: rgba(80, 204, 194, 0.76);
+}
+
+.highscore {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+}
+
+.scores p {
+    font-weight: 400;
+    padding-right: 30px;
+}
+
+table {
+    font-size: 20px;
+    font-weight: 400;
+    background-color: rgb(155, 45, 37);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 450px;
+
+
+}
+
+td { 
+    border-radius: 2000px;
+    background-color: rgb(229, 229, 160);
+    padding: 35px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+input {
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgb(229, 229, 160);
+    height: 30px;
+    width: 100px;
+    margin-right: 20px;
+}
+
+button {
+    background-color: rgb(155, 45, 37);
+    font-weight: 800;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 60px;
+    height: 30px;
+}
