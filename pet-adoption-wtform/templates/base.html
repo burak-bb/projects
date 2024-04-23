@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    {% block content %}
+    <h1>Pets</h1>
+    <div class="grid-container">
+        {% for pet in pets %}
+            <div class="grid-row">
+                <div><img height="200" width="200" src="{{pet.photo_url}}" alt=""></div>
+                <div><span class="text-primary"><a href="/pet/{{pet.id}}">{{pet.name}}</a></span> is available!</div>
+            </div>
+        {% endfor %}
+    </div>
+    <form action="/pet/new">
+        <button class="btn-primary">Add Pet</button>
+    </form>
+    {% endblock %}
+</body>
+</html>

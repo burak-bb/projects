@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div>
+    <div><img height="200" width="200" src="{{pet.photo_url}}" alt=""></div>
+    <div>
+        <p>{{pet.name}}</p>
+        <p>{{pet.species}}</p>
+        {% if pet.age %}
+            <p>{{pet.age}}</p>
+        {% endif %}
+        {% if pet.notes %}
+            <p>{{pet.notes}}</p>
+        {% endif %}
+        <p>{{pet.notes}}</p>
+    </div>
+</div>
+
+{% endblock %}
