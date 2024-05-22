@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/33e210da1c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="library">
+            <div class="navigation">
+                <div class="home">
+                    <i class="fa-solid fa-house home-logo"></i><a href="/">Home</a>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass search-logo"></i>
+                    <form action="/search">
+                        <input type="text" placeholder="Search">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="main">
+            <div class="iframe">
+                <iframe src="https://open.spotify.com/embed/track/4l0Mvzj72xxOpRrp6h8nHi?utm_source=oembed" frameborder="0"></iframe>
+            </div>
+            <div class="tops">
+                <div class="top top-songs">
+                    <div class="top-div"><p>Top 10 Songs</p></div>
+                    <div class="tracks-container">
+                        {% for track in tracks %}
+                        <div class="track" id="{{track.t_id}}">
+                            <div class="track-info">
+                                <div class="track-img">
+                                    <img src="{{track.t_image}}">
+                                </div>
+                                <div>
+                                    <div class="track-name">
+                                        <p>{{track.t_name}}</p>
+                                    </div>
+                                    <div class="track-artist">
+                                        <p>{{track.t_artist}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="top top-playlists">
+                    <div class="top-div"><p>Top 10 Playlists</p></div>
+                    <div class="playlists-container">
+                        {% for playlist in playlists %}
+                        <div class="playlist" id="{{playlist.p_id}}">
+                            <div class="playlist-info">
+                                <div class="playlist-img">
+                                    <img src="{{playlist.p_image}}">
+                                </div>
+                                <div class="playlist-name">
+                                    <p>{{playlist.p_name}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="top top-artists">
+                    <div class="top-div"><p>Top 10 Artists</p></div>
+                    <div class="artists-container">
+                        {% for artist in artists %}
+                        <div class="artist" id="{{artist.a_id}}">
+                            <div class="artist-info">
+                                <div class="artist-img">
+                                    <img src="{{artist.a_image}}">
+                                </div>
+                                <div class="artist-name">
+                                    <p>{{artist.a_name}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rave"></div>
+    </div>
+    <iframe style="border-radius: 12px" width="100%" height="152" title="Spotify Embed: Within You" frameborder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" src="https://open.spotify.com/embed/track/4QNpBfC0zvjKqPJcyqBy9W?utm_source=oembed"></iframe>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/static/scripts/script.js"></script>
+    
+</body>
+</html>
