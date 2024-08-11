@@ -1,0 +1,42 @@
+.Bottom-Nav {
+    background-color: rgb(100,20,100,0.4);
+    text-align: center;
+  
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+    color: black;
+  }
+  
+  
+  .nav-link{
+    color: rgb(100,20,100);
+    font-size: 25px
+  
+  }
+  
+  .nav-link:hover{
+    color: rgb(200, 200, 20);
+    font-size: 25px
+
+  }
+
+  .linked-in:hover{
+    color: blue
+  }
+  
+  .github:hover{
+    color: #2dba4e
+  }
+  
+  .navbar-brand {
+    color: rgb(100,20,100);
+    font-size:25px
+  }
+  
+  .navbar-brand:hover {
+    color: rgb(200, 200, 20);
+  }
+  
+  

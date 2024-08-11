@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="pt-5"
+  >
+    <div
+      class="Homepage"
+    >
+      <div
+        class="container text-center"
+      >
+        <div
+          class="loggedin"
+        >
+          <h2>
+            Welcome! testuser
+          </h2>
+          <div
+            class="playlists"
+          >
+            <h2>
+              Playlists
+            </h2>
+            <div
+              class="PlayList col-8 offset-md-2"
+            >
+              <p
+                class="lead"
+              >
+                You don't have any playlists yet
+              </p>
+            </div>
+            <img
+              alt="Violet"
+              class="homepage-logo"
+              src="Logo-Homepage.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,48 @@
+.Homepage {
+  /* put around the vertical center of page */
+  height: calc(100vh - 150px);
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white
+}
+
+.pt-5 {
+  background-color: black;
+}
+
+.lead{
+  font-family: "Helvetica";
+  color: white;
+  font-size:30px
+}
+
+.loggedin{
+  top: 25%;
+  left: 10%;
+  position:absolute;
+}
+
+.homepage-logo{
+  top: 10%;
+  left: 120%;
+  position:absolute;
+}
+
+.playlists{
+  color: white;
+}
+
+.edit{
+  color: rgb(100,20,100);
+  position: absolute;
+  left: 85%
+}
+
+.edit:hover{
+  color: rgb(200,200,20)
+}
+
+
+
+

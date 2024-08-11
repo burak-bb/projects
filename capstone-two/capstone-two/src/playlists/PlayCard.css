@@ -1,0 +1,12 @@
+.PlayCard {
+
+  color: rgb(100,20,100);
+  margin-top: 25px;
+  max-height: 30px
+
+}
+
+.PlayCard:hover { /* <Card /> that is also <Link /> */
+  text-decoration: none;
+  color: rgb(200,40,200)
+}

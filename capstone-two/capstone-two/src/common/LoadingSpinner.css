@@ -1,0 +1,16 @@
+.LoadingSpinner {
+  margin: 200px auto 0 auto;
+  color: rgb(136, 29, 146);
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  background-color: black;
+  animation: rotateSpinner 800ms linear infinite;
+
+}
+
+@keyframes rotateSpinner {
+	to {
+		transform: rotate(360deg);
+	}
+}

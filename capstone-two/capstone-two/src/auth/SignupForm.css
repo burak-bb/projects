@@ -1,0 +1,17 @@
+.SignupForm{
+    border-color: white solid 5px;
+    color:white;
+    font-size:25px
+}
+
+.card{
+    background-color: black;
+    font-weight: bold;
+}
+
+.form-control{
+    height: 40px;
+    font-size: 20px;
+    font-weight:bold;
+    color: rgb(200, 40, 200)
+}
